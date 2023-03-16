@@ -1,11 +1,11 @@
-export interface IAttrs {
+export interface IArticle {
   status: string;
   createdAt: Date;
   authorId: number;
 };
 
 class Entity {
-  constructor(attrs: IAttrs) {
+  constructor(attrs: IArticle) {
     Object.assign(this, attrs);
   };
 };
